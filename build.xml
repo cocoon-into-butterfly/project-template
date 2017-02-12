@@ -1,0 +1,26 @@
+<project
+	name="h5Editor-form"
+	basedir="."
+	default="build">
+
+	<property file="build.properties"/>
+
+	<!-- 构建-->
+	<target name="build" depends="clean" description="build">
+
+
+		<echo>build</echo>
+	</target>
+
+	<!-- 清理 -->
+	<target name="clean">
+		<delete includeemptydirs="true">
+			<fileset dir="build">
+				<include name="**/*"/>
+			</fileset>
+			<fileset dir="dist">
+				<include name="**/*"/>
+			</fileset>
+		</delete>
+	</target>
+</project>
