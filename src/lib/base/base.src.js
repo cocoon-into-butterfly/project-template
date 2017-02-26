@@ -1429,6 +1429,7 @@
 		 * @return {Void}
 		 */
 		render: function(obj, tplid, target) {
+			debugger
 			var dom = Is.ele(target) ? target : document.getElementById(target);
 			obj && dom && (dom.innerHTML = template("#" + tplid, obj));
 		}
